@@ -535,7 +535,7 @@ def _interpret_common_properties(
     result = {}
     props = hentry['properties']
 
-    for prop in ('url', 'uid', 'photo', 'featured' 'logo'):
+    for prop in ('url', 'uid', 'photo', 'featured', 'logo'):
         value = get_plain_text(props.get(prop))
         if value:
             result[prop] = value
